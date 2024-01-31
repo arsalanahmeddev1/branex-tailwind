@@ -6,6 +6,7 @@ module.exports = {
         mont: "Montserrat",
         poppins: "Poppins",
         cabinet: "cabinet",
+        bigSholders: "Big Shoulders Display",
       },
       fontSize: {
         "f-12": "12px",
@@ -21,6 +22,7 @@ module.exports = {
         "f-27": "27px",
         "f-30": "30px",
         "f-35": "35px",
+        "f-40": "40px",
         "f-42": "42px",
         "f-43": "43px",
         "f-45": "45px",
@@ -32,6 +34,7 @@ module.exports = {
       },
       colors: {
         "black-333": "#333333",
+        "black": "#000000",
         "light-black": "#131313",
         "dim-black": "#333",
         "default-color": "#fff",
@@ -39,6 +42,8 @@ module.exports = {
         "color-red": "#bf2424",
         "color-yellow": "#f7b318",
         "color-gradiant": "(45deg, #17c0ae, #f9b416)",
+        "dark-green": "rgb(8, 73, 82)",
+        
       },
       screens: {
         'sm': '360px',
@@ -47,6 +52,9 @@ module.exports = {
         'xl': '1200px',
         'xxl': '1400px',
       },
+      boxShadow: {
+        "shadowlight": "0 0 24px #0000000f;"
+      }
     },
   },
   plugins: [],

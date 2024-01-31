@@ -10,86 +10,454 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@400;600;700;800&family=Montserrat:wght@200;300;400;500;600;700;800&family=Poppins:wght@200;300;400;500;600;700;800&display=swap"
     rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/vendor/font.css">
   <link rel="stylesheet" href="./output.css">
   <title>Vite App</title>
 </head>
 
 <body>
-  <header class=" fixed w-full top-0 z-[1] pt-[20px] ps-[20px]">
-    <div class="w-full">
-      <div class="flex justify-between">
-        <div class="w-1/5">
-          <div class="logo">
-            <img src="./assets/images/logo-monogram.webp" class="max-w-[40px]" alt="">
-          </div>
-        </div>
-        <div class="w-4/5">
-          <div class="flex justify-end items-center">
-            <div class="w-1/2">
-              <ul class="flex gap-5 contact-list ps-[30px] pe-[30px] w-full bg-no-repeat py-[10px]"
-                style="background-image: url(./assets/images/contact-list-bg.png);">
-                <li><a href="tel:+971 4 2417179" class="text-color-red"><i class="fa-solid fa-phone "></i><span
-                      class="text-[#131313] text-f-15 font-bold ps-2 font-cabinet">+971 4 2417179</span></a></li>
-                <li><a href="tel:+971 52 181 0546" class="text-color-red"><i class="fa-solid fa-phone"></i><span
-                      class="text-[#131313] text-f-15 font-bold ps-2 font-cabinet">+971 52 181 0546</span></a></li>
-                <li><a href="mailto:info@branex.ae" class="text-color-red"><i class="fa-solid fa-envelope"></i><span
-                      class="text-[#131313] text-f-15 font-bold ps-2 font-cabinet">info@branex.ae</span></a></li>
-              </ul>
-            </div>
-            <div class="w-[9%]">
-              <img src="./assets/images/menu-image.png" alt="">
-            </div>
-          </div>
+  <header class=" fixed w-full top-0 z-[1] pt-[20px] ps-[20px] pe-[58px]">
+    <!-- <div class="w-full"> -->
+    <div class="flex justify-between">
+      <div class="w-1/5">
+        <div class="logo">
+          <img src="./assets/images/logo-monogram.webp" class="max-w-[60px]" alt="">
         </div>
       </div>
+      <div class="w-4/5">
+        <div class="flex justify-end items-center">
+          <!-- <div class="w-1/2 xxl:w-[36%]"> -->
+          <ul
+            class="flex gap-5 contact-list ps-[30px] pe-[30px] w-full bg-no-repeat py-[10px] bg-right justify-center max-w-[543px]"
+            style="background-image: url(./assets/images/contact-list-bg.png);">
+            <li><a href="tel:+971 4 2417179" class="text-color-red"><i class="fa-solid fa-phone "></i><span
+                  class="text-[#131313] text-f-15 font-bold ps-2 font-cabinet">+971 4 2417179</span></a></li>
+            <li><a href="tel:+971 52 181 0546" class="text-color-red"><i class="fa-solid fa-phone"></i><span
+                  class="text-[#131313] text-f-15 font-bold ps-2 font-cabinet">+971 52 181 0546</span></a></li>
+            <li><a href="mailto:info@branex.ae" class="text-color-red"><i class="fa-solid fa-envelope"></i><span
+                  class="text-[#131313] text-f-15 font-bold ps-2 font-cabinet">info@branex.ae</span></a></li>
+          </ul>
+          <!-- </div> -->
+          <!-- <div class="w-[9%]"> -->
+          <div class="">
+            <img src="./assets/images/menu-image.png" alt="">
+          </div>
+          <!-- </div> -->
+        </div>
+      </div>
+      <!-- </div> -->
     </div>
   </header>
   <!-- banner -->
-  <section class="hero-banner bg-no-repeat bg-contain bg-center h-screen xxl:pt-[183px] xl:pt-[130px]"
+  <section class="hero-banner bg-no-repeat bg-contain h-screen xxl:pt-[183px] xl:pt-[130px]"
     style="background-image: url('./assets/images/banner-bg.webp');">
-    <div class="container mx-auto">
-      <div class="max-w-[1500px]">
-        <div class="flex  ">
-          <div class="w-1/2">
-            <h1 class="text-f-43 my-[22px] font-poppins font-bold text-black-333 max-w-[542px]">We Are the #1
-              <br>
-              <span class="text-color-red">Web Design Company</span>
-              in Dubai, UAE
-            </h1>
-            <p class="text-f-15 font-poppins text-dim-black leading-[26px]">Stand out from your competitors and increase
-              your profits
-              with a magnetic web experience. Branex is the leading choice for website design and development services
-              in Dubai. We offer both custom and WordPress web development, ensuring that you get a responsive, secure,
-              and high-performance website that meets your specific needs.</p>
-            <div class="mt-[30px]  flex  items-center">
-              <div class=" border-2 border-[#000] w-[50px] h-[50px] rounded-[100%] flex justify-center items-center">
-                <i class="fa-solid fa-arrow-right"></i>
-              </div>
-              <h4 class="text-f-15 text-black-333 font-medium ps-[10px] font-poppins ">Let's Discuss Your Project!</h4>
+    <div class="container mx-auto max-w-[1500px]">
+      <div class="flex  justify-between">
+        <div class="w-1/2">
+          <h1 class="text-f-56 my-[22px] font-poppins font-bold text-black-333 max-w-[542px] xxl:max-w-[645px]">We Are
+            the #1
+            <br>
+            <span class="text-color-red">Web Design Company</span>
+            in Dubai, UAE
+          </h1>
+          <p class="text-f-15 xxl:text-f-20 font-poppins text-dim-black leading-[26px] xxl:leading-[32px]">Stand out
+            from your competitors and increase
+            your profits
+            with a magnetic web experience. Branex is the leading choice for website design and development services
+            in Dubai. We offer both custom and WordPress web development, ensuring that you get a responsive, secure,
+            and high-performance website that meets your specific needs.</p>
+          <div class="mt-[30px]  flex  items-center">
+            <div class=" border-2 border-[#000] w-[50px] h-[50px] rounded-[100%] flex justify-center items-center">
+              <i class="fa-solid fa-arrow-right"></i>
             </div>
+            <h4 class="text-f-15 text-black-333 font-medium ps-[10px] font-poppins ">Let's Discuss Your Project!</h4>
           </div>
-          <div class="w-1/2">
-            <div class="bg-color-green rounded-[8px] p-[30px]">
-              <form action="">
-                <h4 class="mb-[12px] text-f-26 font-bold font-mont text-default-color">Get a Quote!</h4>
-                <p class="text-f-12 font-mont text-default-color leading-[17px] pe-[40px] max-w-[255px]">Tell us about
-                  your project and we’ll get back to you shortly.</p>
-                <div class="flex flex-col">
-                  <input type="text" class="input-field border-b-2 bg-transparent w-full text-default-color pb-[10px] pe-[10px] focus-visible:outline-none" placeholder="Your Name">
-                </div>
-              </form>
-            </div>
+        </div>
+        <div class="w-1/2 max-w-[553px]">
+          <div class="bg-color-green rounded-[8px] p-[30px] xxl:p-[40px] m-[30px]">
+            <form action="">
+              <h4 class="mb-[12px] text-f-26 xxl:text-f-40 font-bold font-mont text-default-color">Get a Quote!</h4>
+              <p class="text-f-18 font-mont text-default-color leading-[17px] pe-[40px] max-w-[332px]">Tell us about
+                your project and we’ll get back to you shortly.</p>
+              <div class="flex flex-col">
+                <input type="text"
+                  class="input-field  border-b-2 bg-transparent w-full text-default-color pb-[15px] mt-[23px] text-f-18 font-mont pe-[10px] focus-visible:outline-none"
+                  placeholder="Your Name">
+                <input type="email"
+                  class="input-field  border-b-2 bg-transparent w-full text-default-color pb-[15px] mt-[23px] text-f-18 font-mont pe-[10px] focus-visible:outline-none"
+                  placeholder="Email">
+                <input type="phone"
+                  class="input-field  border-b-2 bg-transparent w-full text-default-color pb-[15px] mt-[23px] text-f-18 font-mont pe-[10px] focus-visible:outline-none"
+                  placeholder="Phone">
+                <textarea
+                  class="input-field  border-b-2 bg-transparent w-full text-default-color pb-[15px] mt-[23px] h-[147px] text-f-18 font-mont pe-[10px] focus-visible:outline-none"
+                  name="" id="" cols="30" rows="10" placeholder="What’s your project about?">
+                    </textarea>
+                <button
+                  class="rounded-[60px] text-color-green mt-[40px] font-[600] font-mont p-[10px] bg-default-color text-f-20">Submit
+                  Request</button>
+              </div>
+            </form>
           </div>
         </div>
       </div>
     </div>
   </section>
-  <script type="module" src="./assets/js/main.js"></script>
+  <!-- section 2 -->
+  <section class="h-screen">
+    <div class="conatiner max-w-[1500px] mx-auto">
+      <div class="flex justify-between">
+        <div class="w-2/2 lg:max-w-[800px]">
+
+          <h2 class="text-f-42 leading-[50px] pb-[9px] font-poppins font-semibold text-black">Empowering Businesses With
+            Revolutionary Web Design Services</h2>
+          <p class="text-black leading-[27px] xxl:leading-[30px] text-f-18 pb-[6px] mb-[10px] font-poppins font-normal">
+            Branex is an industry-leading <span class="font-semibold">web design company in UAE.</span> If you are
+            nurturing a business idea that needs to harness the power of the web, we can create an innovative and
+            responsive web solution that captures hearts, inspires minds and delivers business results.
+          </p>
+          <p class="text-black leading-[27px] xxl:leading-[30px] text-f-18 pb-[6px] font-poppins font-normal mb-[10px]">
+            With more than 14 years of relevant industry experience at our disposal, an army of delighted customers and
+            hundreds of successful projects, you can count on Branex to deliver customized web development solutions
+            that will create an impactful impression in the digital landscape. Fueled by innovation, creativity, and
+            originality, we make sure your website isn’t only aesthetically stimulating, but also optimized for the
+            user, explains who you are and what you do, resonates with your target audience, and is mobile-friendly,
+            responsive, feature-packed, and technically sound. Each pixel-perfect website we design is research-based,
+            SEO optimized, and ready to roll out for digital marketing. Our meticulous attention to detail and
+            relentless focus on user experience sets us apart!
+          </p>
+          <div class="flex items-center mt-[18px]">
+            <div class="w-full">
+              <button
+                class="button-border-image py-[18px] px-[35px] text-uppercase font-bold tracking-[.5px] mb-[15px] mt-[10px] font-poppins">GET
+                TO KNOWN US BETTER</button>
+              <h2 class="font-mont font-bold text-f-23 text-black-333 mt-[20px] mb-[10px] leading-[24px]">What Our
+                Customers<br> have to Say About Us</h2>
+            </div>
+            <div>
+              <img src="./assets/images/clutch.jpg" class="mb-[10px]" alt="">
+              <h6 class="text-f-18 text-black font-poppins">
+                Rated 4.8/5.0 by renowned clients for Mobile Application and Software solutions on numerous platforms.
+              </h6>
+            </div>
+
+          </div>
+        </div>
+        <div class="w-1/3 flex justify-end">
+          <img src="./assets/images/sec-2-right-img.webp" class="max-w-[666px]" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 3 -->
+  <!-- <section>
+    <div class="container max-w-[1500px] mx-auto">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">Slide 1</div>
+          <div class="swiper-slide">Slide 2</div>
+          <div class="swiper-slide">Slide 3</div>
+          <div class="swiper-slide">Slide 4</div>
+          <div class="swiper-slide">Slide 5</div>
+          <div class="swiper-slide">Slide 6</div>
+          <div class="swiper-slide">Slide 7</div>
+          <div class="swiper-slide">Slide 8</div>
+          <div class="swiper-slide">Slide 9</div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <div id="content">more content</div>
+    </div>
+  </section> -->
+  <!-- section 5 -->
+  <section class="bg-cover bg-no-repeat h-screen bg-left h-screen m-auto flex justify-center items-center"
+    style="background-image: url('./assets/images/sec-5-bg-img.jpg');">
+    <div class="container max-w-[1500px] mx-auto">
+      <h3 class="font-mont text-[60px] text-black-333 mb-[62px] text-center font-bold">Industries We Serve
+      </h3>
+      <div class="grid grid-cols-6 gap-x-[15px] gap-y-[30px]">
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img1.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Ecommerce</h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img2.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Food & Beverages</h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img3.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Pickup & Delivery
+
+          </h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img4.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Transportation</h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img5.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Blockchain</h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img6.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Healthcare & Medical
+          </h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img7.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Banking & Finance
+
+          </h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img8.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Social Networking
+
+          </h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img9.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Real Estate
+
+          </h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img10.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Education</h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img11.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Internet of Things
+
+          </h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
+          <img src="./assets/images/card-img12.svg" class="mb-[35px]" alt="">
+          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">On-Demand App
+          </h6>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 6 -->
+  <section class="bg-dark-green h-screen  flex flex-col justify-between items-center relative">
+    <div class="max-w-[1500px] container mx-auto">
+      <h3 class="text-f-70 font-mont font-bold text-default-color m-auto text-center pt-[150px] ">Our Iterative
+        Development Process
+      </h3>
+      <div
+        class="green-gradiant p-[55px] overflow-hidden pe-[92px] absolute bottom-0 w-screen m-auto left-0 right-0 max-w-[1600px]">
+        <div class="swiper-container overflow-hidden">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="flex flex-wrap items-center">
+                <div class="w-1/2 ps-[68px]">
+                  <p class="font-bigSholders text-f-145 font-bold leading-[129px] numbers-hd mb-[10px]">01</p>
+                  <h5
+                    class="font-mont font-medium text-f-30 text-default-color leading-[51px] mb-[10px] mt-[20px] ps-[15px]">
+                    Custom website Development
+                  </h5>
+                  <p class="text-f-14 font-mont leading-[25px] text-default-color ps-[15px] pb-[15px]">
+                    We’ll start with a discovery meeting, understanding what you really want to get out of your new
+                    website,
+                    as well as properly scope and plan all deliverables. This is where we set up project milestones,
+                    identify
+                    the resources and skill sets required for the same, discuss the project budget and mitigation
+                    strategies
+                    and perform an in-depth competitor analysis, before creating the relevant documentation and
+                    outlining the
+                    project plan of what is to be delivered.
+                  </p>
+                </div>
+                <div class="w-1/2 flex justify-end">
+                  <img src="./assets/images/sec-6-right-img.png" class="max-[607px] max-w-[545px]" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-wrap items-center">
+                <div class="w-1/2 ps-[68px]">
+                  <p class="font-bigSholders text-f-145 font-bold leading-[129px] numbers-hd mb-[10px]">02</p>
+                  <h5
+                    class="font-mont font-medium text-f-30 text-default-color leading-[51px] mb-[10px] mt-[20px] ps-[15px]">
+                    Wireframes
+                  </h5>
+                  <p class="text-f-14 font-mont leading-[25px] text-default-color ps-[15px] pb-[15px]">
+                    Wireframes help you visualize how your website will work before adding more realistic content,
+                    fonts, image dimensions or button styles .We need to ensure the user experience is engaging and
+                    creative but also intuitive. We create wireframes first, using text and image blocks as well as call
+                    to actions to create a prototype you can click through to give you an idea of all the user journeys,
+                    followed by a visual design of how your website will look and feel.
+                  </p>
+                </div>
+                <div class="w-1/2 flex justify-end">
+                  <img src="./assets/images/sec-6-right-img2.png" class="max-[607px] max-w-[545px]" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-wrap items-center">
+                <div class="w-1/2 ps-[68px]">
+                  <p class="font-bigSholders text-f-145 font-bold leading-[129px] numbers-hd mb-[10px]">03</p>
+                  <h5
+                    class="font-mont font-medium text-f-30 text-default-color leading-[51px] mb-[10px] mt-[20px] ps-[15px]">
+                    UI/UX
+
+                  </h5>
+                  <p class="text-f-14 font-mont leading-[25px] text-default-color ps-[15px] pb-[15px]">
+                    This is where we get our creative juices flowing. As a web design company in Dubai, All designs are
+                    crafted meticulously, making sure they complement your brand and give you an edge over competition
+                    while providing your users with an engaging and refreshing experience. After we have reviewed the
+                    mockups with you, we will make any changes where necessary. Once approved, we’ll be ready to move
+                    onto development.
+                  </p>
+                </div>
+                <div class="w-1/2 flex justify-end">
+                  <img src="./assets/images/sec-6-right-img3.png" class="max-[607px] max-w-[545px]" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-wrap items-center">
+                <div class="w-1/2 ps-[68px]">
+                  <p class="font-bigSholders text-f-145 font-bold leading-[129px] numbers-hd mb-[10px]">04</p>
+                  <h5
+                    class="font-mont font-medium text-f-30 text-default-color leading-[51px] mb-[10px] mt-[20px] ps-[15px]">
+                    Custom website Development
+                  </h5>
+                  <p class="text-f-14 font-mont leading-[25px] text-default-color ps-[15px] pb-[15px]">
+                    Behind every world-class website is great code. Our multidisciplinary, full-stack development team
+                    will breathe life into your custom website by leveraging a variety of modern, well-supported
+                    programming languages and technologies, alongside proven libraries and tools, to make sure the
+                    website is slick, assessable, cross-compatible, and mobile-friendly. We fuse great design with
+                    fantastic performance, building infrastructures that work flawlessly to create an unbelievable
+                    digital experience for the user.
+                  </p>
+                </div>
+                <div class="w-1/2 flex justify-end">
+                  <img src="./assets/images/sec-6-right-img4.png" class="max-[607px] max-w-[545px]" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-wrap items-center">
+                <div class="w-1/2 ps-[68px]">
+                  <p class="font-bigSholders text-f-145 font-bold leading-[129px] numbers-hd mb-[10px]">05</p>
+                  <h5
+                    class="font-mont font-medium text-f-30 text-default-color leading-[51px] mb-[10px] mt-[20px] ps-[15px]">
+                    Testing
+                  </h5>
+                  <p class="text-f-14 font-mont leading-[25px] text-default-color ps-[15px] pb-[15px]">
+                    So, we’re almost done! Before the website goes live, we check for any possible glitches and bugs
+                    that may have been left undetected.. As an expert web design company in Dubai, we test your website
+                    through both manual and automated techniques to make sure any issues are under control and your
+                    website serves its intended purpose.
+                  </p>
+                </div>
+                <div class="w-1/2 flex justify-end">
+                  <img src="./assets/images/sec-6-right-img5.png" class="max-[607px] max-w-[545px]" alt="">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="flex flex-wrap items-center">
+                <div class="w-1/2 ps-[68px]">
+                  <p class="font-bigSholders text-f-145 font-bold leading-[129px] numbers-hd mb-[10px]">06</p>
+                  <h5
+                    class="font-mont font-medium text-f-30 text-default-color leading-[51px] mb-[10px] mt-[20px] ps-[15px]">
+                    Launch & Deployment
+
+                  </h5>
+                  <p class="text-f-14 font-mont leading-[25px] text-default-color ps-[15px] pb-[15px]">
+                    Once you are happy with the website and the final QA has been performed, we deploy your website and
+                    continually monitor it to flag and resolve any issues. Our experts set up continuous feedback and
+                    monitoring procedures to ensure that performance benchmarks are met always.
+                  </p>
+                </div>
+                <div class="w-1/2 flex justify-end">
+                  <img src="./assets/images/sec-6-right-img6.png" class="max-[607px] max-w-[545px]" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- section 7 -->
+  <section class="pt-[30px]">
+    <div class="container mx-auto max-w-[1500px] h-screen flex justify-center items-center">
+      <div class="flex flex-wrap items-center">
+        <div class="w-1/2">
+          <div class="triangle-icon relative">
+            <h3 class="text-[#231e2b] text-[38px] pb-[35px] relative font-mont font-bold">We Deliver Results</h3>
+            <img src="./assets/images/triangle-img.png" class="absolute top-[10px] left-[-81px] w-[55px] " alt="">
+          </div>
+          <p class="text-black text-[17px] font-poppins leading-[33px] pb-[35px]">As a professional <b>web design agency
+              in Dubai</b>, Branex offers full-stack web development services. We are somewhat of an expert in building
+            high-performing websites that are feature-packed, responsive, highly intuitive, and capable of delivering an
+            exceptional user experience. Manifest your brand the right way with a coherent brand identity, impressive
+            visuals, an intuitive layout and navigation, compelling content and well-structured user-journeys. Whether
+            you want to build a new website from scratch, add extra oomph to an existing one or need a completely
+            bespoke <b>web design in Dubai</b>, Branex can deliver!</p>
+          <p class="text-[#0ec1b4] font-semibold text-[19px] pb-[35px] max-w-[556px]">
+            EXPANDING EMOTIONAL COMPONENTS TO ENRICH DIGITAL EXPERIENCE
+          </p>
+          <div class="flex flex-wrap gap-[140px] ms-[55px] relative counter-wrap">
+            <div>
+              <h3 class="text-color-yellow text-f-75 font-bold font-mont pb-[22px] ">686</h3>
+              <p class="text-[#231e2b] font-bold text-f-18 font-mont pb-[35px]">Projects Delivered
+              </p>
+            </div>
+            <div>
+              <h3 class="text-color-yellow text-f-75 font-bold font-mont pb-[22px] ">50</h3>
+              <p class="text-[#231e2b] font-bold text-f-18 font-mont pb-[35px]">In Progress
+              </p>
+            </div>
+          </div>
+          <a href="javascript:;"
+            class="button-border-image py-[18px] px-[35px] text-uppercase font-bold tracking-[.5px] mb-[15px] mt-[10px] uppercase w-[181px] flex justify-center items-center text-[#231e2b] font-mont ">Let's
+            Talk</a>
+        </div>
+        <div class="w-1/2 flex justify-end">
+          <img src="./assets/images/sec-7-right-img.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="h-screen bg-no-repeat bg-cover" style="background-image: url('./assets/images/sec-8-bg-img.webp');">
+    <div class="container mx-auto max-w-[1500px]">
+      <div class="bg-default-color rounded-[20px] p-[45px] ">
+        <h3 class="font-poppins text-black mb-[20px] font-bold ">Best Web Development Company in Dubai
+        </h3>
+        <p class="text-black text-f-18 font-poppins leading-[30px] pb-[6px]">
+          Take your users on a journey by giving them the best experience on your website. While eye-catching aesthetics will grab the attention of your visitors, a website that is engaging, user-friendly, easy to navigate and focused on your target audience is the key to converting a prospect into a profitable customer. As an award-winning web development company in Dubai, we firmly believe that balancing these two aspects of design will result in the greatest user experience. For over a decade, we have been mastering the art of creating cutting-edge digital experiences that truly make a difference, for influential entrepreneurs to growing businesses alike.
+        </p>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+    integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/main.js"></script>
 </body>
 
 </html>

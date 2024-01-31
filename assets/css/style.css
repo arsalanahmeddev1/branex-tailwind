@@ -4,4 +4,112 @@
 .input-field,
 .input-field::placeholder {
   color: #fff;
+  font-family: 'Poppins';
+  font-weight: 500;
+}
+.button-border-image {
+  border: 1px solid transparent;
+  border-image: linear-gradient(45deg,#17c0ae,#f9b416);
+  border-image-slice: 1;
+}
+.button-border-image:hover {
+  background: linear-gradient(to bottom right,#f9b416,#41baa5);
+  color: #fff;
+  transition: .5s;
+}
+.green-gradiant {
+  background: linear-gradient(270deg, #084E4E 0%, #0D3438 113.67%);
+  border-radius: 20px 20px 0px 0px;
+}
+.numbers-hd {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.2) 100%);
+  background-clip: text;
+  opacity: 0.5;
+  -webkit-text-fill-color: transparent;
+}
+/* .swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ */
+ .swiper-container {
+  width: 100%;
+  height: 500px;
+  margin: 0 auto;
+}
+.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+  left: 55px;
+}
+.swiper-pagination-bullet {
+  display: block;
+  margin-bottom: 0px;
+  border-radius: 50px;
+  width: 15px;
+  height: 15px;
+  background: #BDBDBD;
+  border-radius: 100%;
+  opacity: .60;
+}
+.swiper-pagination-bullet.swiper-pagination-bullet-active {
+  /* width: 17px;
+  height: 17px; */
+  background: transparent;
+  border: 1px solid #ffffff;
+  position: relative;
+  border-radius: 100%;
+  padding: 7px;
+} 
+.bullet-inner {
+  background: #ffffff;
+    width: 6px;
+    height: 6px;
+    position: relative;
+    border-radius: 12px;
+    left: 5px;
+    top: 2px;
+}
+.swiper-pagination-bullet-active {
+  position: relative;
+}
+.swiper-pagination-bullet-active::after {
+  content: '';
+  top: 50%;
+  left: 50%;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+  transform: translate(-50%, -50%);
+}
+.counter-wrap::after {
+  content: "";
+  position: absolute;
+  border: 1px solid #ea0000;
+  height: 129px;
+  width: 2px;
+  top: 23%;
+  left: 236px;
+  transform: translate(-50%, -50%);
 }
