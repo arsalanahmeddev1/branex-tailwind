@@ -10,17 +10,85 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap"
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/vendor/font.css">
   <link rel="stylesheet" href="./output.css">
   <title>Vite App</title>
 </head>
 
 <body>
-  <header class="">
-    
+  <header class=" fixed w-full top-0 z-[1] pt-[20px] ps-[20px]">
+    <div class="w-full">
+      <div class="flex justify-between">
+        <div class="w-1/5">
+          <div class="logo">
+            <img src="./assets/images/logo-monogram.webp" class="max-w-[40px]" alt="">
+          </div>
+        </div>
+        <div class="w-4/5">
+          <div class="flex justify-end items-center">
+            <div class="w-1/2">
+              <ul class="flex gap-5 contact-list ps-[30px] pe-[30px] w-full bg-no-repeat py-[10px]"
+                style="background-image: url(./assets/images/contact-list-bg.png);">
+                <li><a href="tel:+971 4 2417179" class="text-color-red"><i class="fa-solid fa-phone "></i><span
+                      class="text-[#131313] text-f-15 font-bold ps-2 font-cabinet">+971 4 2417179</span></a></li>
+                <li><a href="tel:+971 52 181 0546" class="text-color-red"><i class="fa-solid fa-phone"></i><span
+                      class="text-[#131313] text-f-15 font-bold ps-2 font-cabinet">+971 52 181 0546</span></a></li>
+                <li><a href="mailto:info@branex.ae" class="text-color-red"><i class="fa-solid fa-envelope"></i><span
+                      class="text-[#131313] text-f-15 font-bold ps-2 font-cabinet">info@branex.ae</span></a></li>
+              </ul>
+            </div>
+            <div class="w-[9%]">
+              <img src="./assets/images/menu-image.png" alt="">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
+  <!-- banner -->
+  <section class="hero-banner bg-no-repeat bg-contain bg-center h-screen xxl:pt-[183px] xl:pt-[130px]"
+    style="background-image: url('./assets/images/banner-bg.webp');">
+    <div class="container mx-auto">
+      <div class="max-w-[1500px]">
+        <div class="flex  ">
+          <div class="w-1/2">
+            <h1 class="text-f-43 my-[22px] font-poppins font-bold text-black-333 max-w-[542px]">We Are the #1
+              <br>
+              <span class="text-color-red">Web Design Company</span>
+              in Dubai, UAE
+            </h1>
+            <p class="text-f-15 font-poppins text-dim-black leading-[26px]">Stand out from your competitors and increase
+              your profits
+              with a magnetic web experience. Branex is the leading choice for website design and development services
+              in Dubai. We offer both custom and WordPress web development, ensuring that you get a responsive, secure,
+              and high-performance website that meets your specific needs.</p>
+            <div class="mt-[30px]  flex  items-center">
+              <div class=" border-2 border-[#000] w-[50px] h-[50px] rounded-[100%] flex justify-center items-center">
+                <i class="fa-solid fa-arrow-right"></i>
+              </div>
+              <h4 class="text-f-15 text-black-333 font-medium ps-[10px] font-poppins ">Let's Discuss Your Project!</h4>
+            </div>
+          </div>
+          <div class="w-1/2">
+            <div class="bg-color-green rounded-[8px] p-[30px]">
+              <form action="">
+                <h4 class="mb-[12px] text-f-26 font-bold font-mont text-default-color">Get a Quote!</h4>
+                <p class="text-f-12 font-mont text-default-color leading-[17px] pe-[40px] max-w-[255px]">Tell us about
+                  your project and we’ll get back to you shortly.</p>
+                <div class="flex flex-col">
+                  <input type="text" class="input-field border-b-2 bg-transparent w-full text-default-color pb-[10px] pe-[10px] focus-visible:outline-none" placeholder="Your Name">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <script type="module" src="./assets/js/main.js"></script>
 </body>
 
