@@ -43,7 +43,7 @@ module.exports = {
         "color-yellow": "#f7b318",
         "color-gradiant": "(45deg, #17c0ae, #f9b416)",
         "dark-green": "rgb(8, 73, 82)",
-        
+
       },
       screens: {
         'sm': '360px',
@@ -53,7 +53,8 @@ module.exports = {
         'xxl': '1400px',
       },
       boxShadow: {
-        "shadowlight": "0 0 24px #0000000f;"
+        "shadowlight": "0 0 24px #0000000f;",
+        "shadowmd": "0px 10px 31px 0 #0000000a;",
       }
     },
   },

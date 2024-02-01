@@ -1,25 +1,42 @@
-const swiper = new Swiper(".swiper-container", {
-    // Optional parameters
-    direction: "vertical",
-    loop: true,
+const swiper = new Swiper(".Iterative-slider", {
+  // Optional parameters
+  direction: "vertical",
+  loop: true,
 
-    pagination: {
-      el: ".swiper-pagination",
-      type: "bullets",
-      clickable: true,
-    },
-    mousewheel: {
-      invert: false,
-    },
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  mousewheel: {
+    invert: false,
+  },
 
-    // Navigation arrows
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
 
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar",
-    },
-  });
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+
+var swiper2 = new Swiper(".futuristic-slider", {
+  centeredSlides: false,
+  slidesPerView: 1,
+  loop: true,
+  navigation: false,
+  autoplay: {
+    delay: 0,
+    disableOnInteraction: false,
+  },
+  speed: 40000,
+  pagination: {
+    el: false,
+  },
+
+});

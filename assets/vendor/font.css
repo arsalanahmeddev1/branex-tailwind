@@ -1,29 +1,4 @@
 @font-face {
-  font-family: "mont";
-  font-weight: 400;
-  src: url(../fonts/mont.ttf);
-}
-@font-face {
-  font-family: "mont";
-  font-weight: 700;
-  src: url(../fonts/mont-b.ttf);
-}
-@font-face {
-  font-family: "mont";
-  font-weight: 600;
-  src: url(../fonts/mont-sb.ttf);
-}
-@font-face {
-  font-family: "cabinet";
-  font-weight: 400;
-  src: url(../fonts/CabinetGrotesk-Regular.otf);
-}
-@font-face {
-  font-family: "cabinet";
-  font-weight: 500;
-  src: url(../fonts/CabinetGrotesk-Medium.otf);
-}
-@font-face {
   font-family: 'cabinet';
   font-weight: 400;
   src: url(../fonts/CabinetGrotesk-Regular.otf);
@@ -37,5 +12,10 @@
   font-family: 'cabinet';
   font-weight: 700;
   src: url(../fonts/CabinetGrotesk-Bold.otf);
+}
+@font-face {
+  font-family: 'cabinet';
+  font-weight: 900;
+  src: url(../fonts/CabinetGrotesk-Extrabold.otf);
 }
 
