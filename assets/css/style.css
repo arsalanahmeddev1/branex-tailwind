@@ -4,25 +4,29 @@
 .input-field,
 .input-field::placeholder {
   color: #fff;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-weight: 500;
 }
 .button-border-image {
   border: 1px solid transparent;
-  border-image: linear-gradient(45deg,#17c0ae,#f9b416);
+  border-image: linear-gradient(45deg, #17c0ae, #f9b416);
   border-image-slice: 1;
 }
 .button-border-image:hover {
-  background: linear-gradient(to bottom right,#f9b416,#41baa5);
+  background: linear-gradient(to bottom right, #f9b416, #41baa5);
   color: #fff;
-  transition: .5s;
+  transition: 0.5s;
 }
 .green-gradiant {
-  background: linear-gradient(270deg, #084E4E 0%, #0D3438 113.67%);
+  background: linear-gradient(270deg, #084e4e 0%, #0d3438 113.67%);
   border-radius: 20px 20px 0px 0px;
 }
 .numbers-hd {
-  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.2) 100%);
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    rgba(255, 255, 255, 0.2) 100%
+  );
   background-clip: text;
   opacity: 0.5;
   -webkit-text-fill-color: transparent;
@@ -48,12 +52,13 @@
   object-fit: cover;
 }
  */
- .swiper-container {
+.swiper-container {
   width: 100%;
   height: 500px;
   margin: 0 auto;
 }
-.swiper-pagination-vertical.swiper-pagination-bullets, .swiper-vertical>.swiper-pagination-bullets {
+.swiper-pagination-vertical.swiper-pagination-bullets,
+.swiper-vertical > .swiper-pagination-bullets {
   left: 55px;
 }
 .swiper-pagination-bullet {
@@ -62,9 +67,9 @@
   border-radius: 50px;
   width: 15px;
   height: 15px;
-  background: #BDBDBD;
+  background: #bdbdbd;
   border-radius: 100%;
-  opacity: .60;
+  opacity: 0.6;
 }
 .swiper-pagination-bullet.swiper-pagination-bullet-active {
   /* width: 17px;
@@ -74,21 +79,21 @@
   position: relative;
   border-radius: 100%;
   padding: 7px;
-} 
+}
 .bullet-inner {
   background: #ffffff;
-    width: 6px;
-    height: 6px;
-    position: relative;
-    border-radius: 12px;
-    left: 5px;
-    top: 2px;
+  width: 6px;
+  height: 6px;
+  position: relative;
+  border-radius: 12px;
+  left: 5px;
+  top: 2px;
 }
 .swiper-pagination-bullet-active {
   position: relative;
 }
 .swiper-pagination-bullet-active::after {
-  content: '';
+  content: "";
   top: 50%;
   left: 50%;
   bottom: 0;
@@ -112,4 +117,30 @@
   top: 23%;
   left: 236px;
   transform: translate(-50%, -50%);
+}
+.content-box {
+  position: relative;
+}
+.about-content-box {
+  background: url(https://www.branex.ae/assets/img/mobile-app-use-experience-image.jpg);
+  padding: 45px;
+  width: 100%;
+  opacity: 1;
+  max-width: 100%;
+  min-width: 100%;
+  border-radius: 25px;
+  border: 4px solid #ffffff;
+  position: relative;
+}
+.about-content-box::after {
+  content: "";
+  background: #ffffffbd;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  display: block;
+  z-index: 0;
+  border-radius: 20px;
 }

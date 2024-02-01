@@ -53,9 +53,9 @@
     </div>
   </header>
   <!-- banner -->
-  <section class="hero-banner bg-no-repeat bg-contain h-screen xxl:pt-[183px] xl:pt-[130px]"
+  <section class="hero-banner bg-no-repeat bg-contain xxl:h-screen xxl:pt-[183px] xl:pt-[130px]"
     style="background-image: url('./assets/images/banner-bg.webp');">
-    <div class="container mx-auto max-w-[1500px]">
+    <div class="container mx-auto xxl:max-w-[1500px]">
       <div class="flex  justify-between">
         <div class="w-1/2">
           <h1 class="text-f-56 my-[22px] font-poppins font-bold text-black-333 max-w-[542px] xxl:max-w-[645px]">We Are
@@ -108,8 +108,8 @@
     </div>
   </section>
   <!-- section 2 -->
-  <section class="h-screen">
-    <div class="conatiner max-w-[1500px] mx-auto">
+  <section class="xxl:h-screen">
+    <div class="container xxl:max-w-[1500px] mx-auto">
       <div class="flex justify-between">
         <div class="w-2/2 lg:max-w-[800px]">
 
@@ -148,14 +148,14 @@
           </div>
         </div>
         <div class="w-1/3 flex justify-end">
-          <img src="./assets/images/sec-2-right-img.webp" class="max-w-[666px]" alt="">
+          <img src="./assets/images/sec-2-right-img.webp" class="xxl:max-w-[666px] max-w-[400px] object-contain" alt="">
         </div>
       </div>
     </div>
   </section>
   <!-- section 3 -->
   <!-- <section>
-    <div class="container max-w-[1500px] mx-auto">
+    <div class="container xxl:max-w-[1500px] mx-auto">
       <div class="swiper mySwiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">Slide 1</div>
@@ -175,90 +175,97 @@
     </div>
   </section> -->
   <!-- section 5 -->
-  <section class="bg-cover bg-no-repeat h-screen bg-left h-screen m-auto flex justify-center items-center"
+  <section
+    class="bg-cover bg-no-repeat xxl:h-screen bg-left m-auto flex  justify-center items-center pt-[20px] pb-[300px] xxl:p-[0]"
     style="background-image: url('./assets/images/sec-5-bg-img.jpg');">
-    <div class="container max-w-[1500px] mx-auto">
-      <h3 class="font-mont text-[60px] text-black-333 mb-[62px] text-center font-bold">Industries We Serve
+    <div class="container xxl:max-w-[1500px] mx-auto">
+      <h3
+        class="font-mont :xxltext-[60px] text-[24px] xl:text-[42px]  text-black-333 mb-[20px] xxl:mb-[62px] text-center font-bold xl:mb-[42px] ">
+        Industries We Serve
       </h3>
       <div class="grid grid-cols-6 gap-x-[15px] gap-y-[30px]">
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img1.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Ecommerce</h6>
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img1.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Ecommerce</h6>
         </div>
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img2.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Food & Beverages</h6>
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img2.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Food & Beverages
+          </h6>
         </div>
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img3.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Pickup & Delivery
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img3.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Pickup & Delivery
 
           </h6>
         </div>
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img4.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Transportation</h6>
-        </div>
-        <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img5.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Blockchain</h6>
-        </div>
-        <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img6.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Healthcare & Medical
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img4.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Transportation
           </h6>
         </div>
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img7.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Banking & Finance
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img5.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Blockchain</h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img6.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Healthcare &
+            Medical
+          </h6>
+        </div>
+        <div
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img7.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Banking & Finance
 
           </h6>
         </div>
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img8.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Social Networking
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img8.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Social Networking
 
           </h6>
         </div>
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img9.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Real Estate
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img9.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Real Estate
 
           </h6>
         </div>
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img10.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Education</h6>
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img10.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Education</h6>
         </div>
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img11.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">Internet of Things
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img11.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">Internet of
+            Things
 
           </h6>
         </div>
         <div
-          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color py-[40px] max-w-[226px]">
-          <img src="./assets/images/card-img12.svg" class="mb-[35px]" alt="">
-          <h6 class="text-[#666] font-medium text-center text-[17px] font-poppins">On-Demand App
+          class="flex flex-col justify-center items-center shadow-shadowlight rounded-[10px] bg-default-color xxl:py-[40px] py-[20px] max-w-[226px] px-[3px] ">
+          <img src="./assets/images/card-img12.svg" class="xxl:mb-[35px] mb-[22px]" alt="">
+          <h6 class="text-[#666] font-medium text-center  xxl:text-[17px] text-[14px]   font-poppins ">On-Demand App
           </h6>
         </div>
       </div>
     </div>
   </section>
   <!-- section 6 -->
-  <section class="bg-dark-green h-screen  flex flex-col justify-between items-center relative">
-    <div class="max-w-[1500px] container mx-auto">
+  <section class="bg-dark-green xxl:h-screen  flex flex-col justify-between items-center relative">
+    <div class="xxl:max-w-[1500px] container mx-auto">
       <h3 class="text-f-70 font-mont font-bold text-default-color m-auto text-center pt-[150px] ">Our Iterative
         Development Process
       </h3>
@@ -403,8 +410,8 @@
     </div>
   </section>
   <!-- section 7 -->
-  <section class="pt-[30px]">
-    <div class="container mx-auto max-w-[1500px] h-screen flex justify-center items-center">
+  <section class="xxl:pt-[30px] py-[40px]">
+    <div class="container mx-auto xxl:max-w-[1500px] xxl:h-screen flex justify-center items-center">
       <div class="flex flex-wrap items-center">
         <div class="w-1/2">
           <div class="triangle-icon relative">
@@ -443,14 +450,44 @@
       </div>
     </div>
   </section>
-  <section class="h-screen bg-no-repeat bg-cover" style="background-image: url('./assets/images/sec-8-bg-img.webp');">
-    <div class="container mx-auto max-w-[1500px]">
-      <div class="bg-default-color rounded-[20px] p-[45px] ">
-        <h3 class="font-poppins text-black mb-[20px] font-bold ">Best Web Development Company in Dubai
-        </h3>
-        <p class="text-black text-f-18 font-poppins leading-[30px] pb-[6px]">
-          Take your users on a journey by giving them the best experience on your website. While eye-catching aesthetics will grab the attention of your visitors, a website that is engaging, user-friendly, easy to navigate and focused on your target audience is the key to converting a prospect into a profitable customer. As an award-winning web development company in Dubai, we firmly believe that balancing these two aspects of design will result in the greatest user experience. For over a decade, we have been mastering the art of creating cutting-edge digital experiences that truly make a difference, for influential entrepreneurs to growing businesses alike.
-        </p>
+  <section class="xxl:h-screen bg-no-repeat bg-cover flex justify-center items-center"
+    style="background-image: url('./assets/images/sec-8-bg-img.webp');">
+    <div class="container mx-auto xxl:max-w-[1500px]">
+      <div class="bg-default-color rounded-[20px]  content-box ">
+        <div class="about-content-box">
+          <h3 class="font-poppins relative z-10 text-black mb-[20px] font-bold text-center text-[42px]">Best Web Development Company
+            in Dubai
+          </h3>
+          <p
+            class="text-black xxl:text-f-18 text-f-14 font-poppins leading-[24px] xxl:leading-[30px] pb-[6px] mb-[16px] text-center relative z-10">
+            Take your users on a journey by giving them the best experience on your website. While eye-catching
+            aesthetics will grab the attention of your visitors, a website that is engaging, user-friendly, easy to
+            navigate and focused on your target audience is the key to converting a prospect into a profitable customer.
+            As an award-winning <b>web development company in Dubai,</b> we firmly believe that balancing these two
+            aspects of design will result in the greatest user experience. For over a decade, we have been mastering the
+            art of creating cutting-edge digital experiences that truly make a difference, for influential entrepreneurs
+            to growing businesses alike.
+          </p>
+          <p
+            class="text-black relative z-10 xxl:text-f-18 text-f-14 font-poppins leading-[24px] xxl:leading-[30px] pb-[6px] mb-[16px] text-center">
+            Behind every stunning, great-performing website is great code. Our <b>web design company in Dubai</b> only
+            works with the crème-de-la-creme web developers who can take on projects of any complexity and size. We are
+            proud of our diverse talent roster, where each member brings unique skills, knowledge and perspectives to
+            the table. We truly recognize that in this cut-throat digital landscape, cookie-cutter solutions do not cut
+            the bill. Each business is unique, which is why we tailor your digital presence in such a way that it aligns
+            with your brand strategy, as well as helping you with stunning website designs that can leverage your
+            business strength.
+          </p>
+          <p
+            class="text-black relative z-10 xxl:text-f-18 text-f-14 font-poppins leading-[24px] xxl:leading-[30px] pb-[6px] text-center">
+            Branex keeps everything 100% in-house; from designing, development, to digital marketing and branding, to
+            help you build an impactful online presence, promising optimum performance and customer engagement across
+            all devices and platforms. Thanks to years of experience, our dedicated team of dreamers and doers, and our
+            commitment to innovation, unflinching customer satisfaction, and our drive to deliver cutting-edge
+            solutions, our web apps and websites set you apart in the competitive global marketplace, increasing the
+            overall conversion rate.
+          </p>
+        </div>
       </div>
     </div>
   </section>
