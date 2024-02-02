@@ -1,8 +1,8 @@
 const swiper = new Swiper(".Iterative-slider", {
   // Optional parameters
   direction: "vertical",
-  loop: true,
-
+  // loop: true,
+  speed: 1000,
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
@@ -24,7 +24,6 @@ const swiper = new Swiper(".Iterative-slider", {
   },
 });
 
-
 var swiper2 = new Swiper(".futuristic-slider", {
   centeredSlides: false,
   slidesPerView: 1,
@@ -34,9 +33,15 @@ var swiper2 = new Swiper(".futuristic-slider", {
     delay: 0,
     disableOnInteraction: false,
   },
-  speed: 40000,
+  speed: 10000,
   pagination: {
     el: false,
   },
+});
 
+$(document).ready(function() {
+  $('.accortion-button button').click(function() {
+    $(this).next('.acc-content').slideToggle();
+    $(this).find('.accordion-icon i').toggleClass('fa-plus fa-minus');
+  });
 });

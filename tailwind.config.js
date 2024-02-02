@@ -1,4 +1,5 @@
 module.exports = {
+  mode: 'jit',
   content: ["./**/*.{html,js}"],
   theme: {
     extend: {
@@ -58,5 +59,6 @@ module.exports = {
       }
     },
   },
-  plugins: [],
+  plugins: [
+  ],
 }

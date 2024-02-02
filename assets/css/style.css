@@ -147,3 +147,21 @@
 .shadow-text {
   text-shadow: -1px 0 0 #000, 0 1px 0 #000, 1px 0 0 #000, 0 -1px 0 #000;
 }
+.acc-content {
+  transition: 0.2;
+}
+
+.acc-content p::-webkit-scrollbar {
+  width: 4px;
+}
+
+.acc-content p::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 6px;
+}
+
+.acc-content p::-webkit-scrollbar-thumb {
+  background: #92929e;
+  border-radius: 6px;
+
+}
