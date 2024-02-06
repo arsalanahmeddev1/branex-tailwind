@@ -1,6 +1,11 @@
 module.exports = {
   mode: 'jit',
-  content: ["./**/*.{html,js}"],
+  purge: {
+    content: [
+      './**/*.html',
+    ]
+  },
+
   theme: {
     extend: {
       fontFamily: {
@@ -60,5 +65,6 @@ module.exports = {
     },
   },
   plugins: [
+    'prettier-plugin-tailwindcss',
   ],
 }

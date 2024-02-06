@@ -165,3 +165,9 @@
   border-radius: 6px;
 
 }
+.explore-hd-lg {
+  background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0.2) 100%);
+  -webkit-text-fill-color: transparent;
+    background-clip: text;
+    opacity: 0.5
+}
