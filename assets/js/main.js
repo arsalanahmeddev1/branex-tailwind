@@ -23,8 +23,34 @@ const swiper = new Swiper(".Iterative-slider", {
     el: ".swiper-scrollbar",
   },
 });
+const swiper2 = new Swiper(".explore-more", {
+  // Optional parameters
+  height: 300,
+  direction: "vertical",
+  // loop: true,
+  speed: 1000,
+  pagination: {
+    el: ".swiper-pagination",
+    type: "bullets",
+    clickable: true,
+  },
+  mousewheel: {
+    invert: false,
+  },
 
-var swiper2 = new Swiper(".futuristic-slider", {
+  // Navigation arrows
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: ".swiper-scrollbar",
+  },
+});
+
+var swiper3 = new Swiper(".futuristic-slider", {
   centeredSlides: false,
   slidesPerView: 1,
   loop: true,
